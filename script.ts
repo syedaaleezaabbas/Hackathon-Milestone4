@@ -14,25 +14,29 @@ form.addEventListener('submit', (event: Event) => {
     const education = (document.getElementById('education') as HTMLInputElement).value;
     const experience = (document.getElementById('experience') as HTMLInputElement).value;
     const skills = (document.getElementById('skills') as HTMLInputElement).value;
+    const languages = (document.getElementById('languages') as HTMLInputElement).value;
 
     // Generate the resume content dynamically
     const resumeHTML = `
 <h2><b>Editable Resume</b></h2>
 
-<h3>Personal Information<h3>
-<p><b>Name: </b><span contenteditable="true">${name}</span></p>
-<p><b>Email: </b><span contenteditable="true">${email}/<span></p>
-<p><b>Phone: </b><span contenteditable="true">${phone}<span></p>
-<p><b>Address: </b><span contenteditable="true">${address}<span></p>
+<h3 style="background-color:#9966cc">Personal Information<h3>
+<p>Name: <span contenteditable="true">${name}</span></p>
+<p>Email: <span contenteditable="true">${email}/<span></p>
+<p>Phone: <span contenteditable="true">${phone}<span></p>
+<p>Address: <span contenteditable="true">${address}<span></p>
 
-<h3>Education<h3>
+<h3 style="background-color:#9966cc">Education<h3>
 <p contenteditable="true">${education}</p>
 
-<h3>Experience<h3>
+<h3 style="background-color:#9966cc">Experience<h3>
 <p contenteditable="true">${experience}</p>
 
-<h3>Skills<h3>
+<h3 style="background-color:#9966cc">Skills<h3>
 <p contenteditable="true">${skills}</p>
+
+<h3 style="background-color:#9966cc">Languages<h3>
+<p>${languages}</p>
 `
     // Display the generated resume
     if (resumeDisplayElement) {
