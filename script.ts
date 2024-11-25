@@ -36,7 +36,7 @@ form.addEventListener('submit', (event: Event) => {
 <p contenteditable="true">${skills}</p>
 
 <h3 style="background-color:#9966cc">Languages<h3>
-<p>${languages}</p>
+<p contenteditable="true">${languages}</p>
 `
     // Display the generated resume
     if (resumeDisplayElement) {
